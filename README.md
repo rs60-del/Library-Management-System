@@ -1,17 +1,31 @@
-# Library Management System using SQL
+# Project Title: Library Management System using SQL
 
-## Project Overview
+# Project Overview
 
-**Project Title**: Library Management System    
-**Database**: `library_db`
+This project implements a Library Management System using SQL with a structured relational database design. It simulates real-world library operations such as book issuance, returns, member management, and performance tracking.
 
-This project demonstrates the implementation of a Library Management System using SQL. It includes creating and managing tables, performing CRUD operations, and executing advanced SQL queries. The goal is to showcase skills in database design, manipulation, and querying.
+The system demonstrates database design, data integrity enforcement, CRUD operations, stored procedures, and analytical reporting using SQL.
+
+# Tools used
+SQL (PostgreSQL),
+Excel (for initial data preparation) and
+DBMS (e.g., pgAdmin / MySQL Workbench)
 
 
-## Objectives
+# Database Design
 
-1. **Set up the Library Management System Database**: Create and populate the database with tables for branches, employees, members, books, issued status, and return status.
-2. **CRUD Operations**: Perform Create, Read, Update, and Delete operations on the data.
-3. **CTAS (Create Table As Select)**: Utilize CTAS to create new tables based on query results.
-4. **Advanced SQL Queries**: Develop complex queries to analyze and retrieve specific data.
+The system consists of the following relational tables:
+
+ -> branch – library branch details
+ -> employees – staff working in branches
+ -> members – library users
+ -> books – book inventory
+ -> issued_status – records of issued books
+ -> return_status – records of returned books
+ 
+ Relationships
+One branch → many employees
+One member → many issued books
+One book → multiple issue records
+Issue → Return mapping via issued_id
 
