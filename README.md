@@ -102,16 +102,5 @@ Generated actionable insights from raw transactional data
 
 Strengthened understanding of real-world database design principles
 
-# How to Run This Project
-Create database:
-
-CREATE DATABASE library_db;
-
-Run basic_queries.sql to create tables
-
-Import Excel datasets into respective tables
-
-advanced_queries.sql
-
 # conclusion
 This project demonstrates practical implementation of relational database design, transactional workflows, and analytical SQL querying in a real-world library system scenario.
